@@ -1,0 +1,334 @@
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* CSS RESET ENDS HERE */
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 27px;
+  letter-spacing: 0.03em;
+  color: #7E8890;
+}
+
+.right-floated {
+  float: right;
+}
+
+.left-floated {
+  float: left;
+}
+
+.hero {
+  height: 89vh;
+  background-color: #F0F0F0;
+  position: relative;
+}
+
+.background {
+  position: relative;
+  background-color: rgba(255,255,255,1);
+  height: 100%;
+  width: 100%;
+}
+
+.bg-image {
+  position: absolute;
+  background: url('./images/bg.jpg') no-repeat center center;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.foreground {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0,0.6);
+  color: #FFFFFF;
+}
+
+.nav {
+  margin: 40px 3em 0;
+}
+
+.brand {
+  float: left;
+}
+
+.nav-links {
+  float: right;
+  padding-top: 10px;
+}
+
+.nav-links li {
+  display: inline-block;
+}
+
+.nav-links li a {
+  padding: 0px 18px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 300;
+  font-size: 13px;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  color: #FFFFFF;
+}
+
+.nav-links li a:hover, .nav-links li a:active  {
+  color: #FB3F6E;
+}
+
+.secondary-btn, .nav-links li a.secondary-btn {
+  padding: 10px 25px;
+  border: 1px solid #FB3F6E;
+  border-radius: 25px;
+  color: #FB3F6E;
+  transition: 0.3s;
+}
+
+.secondary-btn:hover, .nav-links li a.secondary-btn:hover,
+.secondary-btn:active, .nav-links li a.secondary-btn:active {
+  color: #FFFFFF;
+  background-color: #FB3F6E;
+}
+
+.jumbotron {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  /*width: 100%;*/
+  clear: both;
+  padding: 0 5%;
+}
+
+.jumbotron .header {
+  margin-top: 22vh;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 100;
+  font-size: 46px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.jumbotron .sub-header {
+  margin-top: 5vh;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 100;
+  font-style: italic;
+  font-size: 24px;
+  letter-spacing: 0.01em;
+}
+
+.jumbotron .primary-btn {
+  margin: 5vh;
+  padding: 10px 55px;
+  border: 1px solid #F36;
+  border-radius: 25px;
+  color: #FFFFFF;
+  background-color: #F36;
+  transition: 0.3s;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.primary-btn:hover, .jumbotron .primary-btn:hover,
+.primary-btn:active, .jumbotron .primary-btn:active {
+  border-color: #F42156;
+  background-color: #F42156;
+}
+
+.jumbotron .play-btn {
+  background-image: url("https://www.invisionapp.com/assets/img/sprites-retina/global-s37779d1c20.png");
+  background-size: 141px auto;
+  background-position: 0 -957px;
+  background-repeat: no-repeat;
+  height: 50px;
+  width: 50px;
+  margin: 1em;
+}
+
+.scroll {
+  position: absolute;
+  bottom: 5vh;
+  background-image: url("https://www.invisionapp.com/assets/img/sprites-retina/home-s58ac0b533f.png");
+  background-position: 0 -1505.5px;
+  background-size: 210px auto;
+  margin: 3px;
+  height: 7px;
+  width: 12px;
+}
+
+.logo-band {
+  height: 11vh; 
+  background-color: #F9F9FA;
+  max-width: 1320px;
+  padding: 0 140px;
+}
+
+.logo-band ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  text-transform: uppercase;
+}
+
+.logo-band ul li span {
+  display: inline-block;
+  background-image: url("https://www.invisionapp.com/assets/img/sprites-retina/home-s58ac0b533f.png");
+  background-size: 210px auto;
+  text-indent: 500px;
+  overflow: hidden;
+}
+
+.logo-band ul .uber span {
+  width: 74px;
+  height: 15px; 
+  background-position: 0 -2950px;
+}
+
+.logo-band ul .shopify span {
+  width: 105px;
+  height: 32px; 
+  background-position: 0 -511px;
+}
+
+.logo-band ul .salesforce span {
+  width: 54px;
+  height: 38px;
+  background-position: 0 -1457.5px;
+}
+
+.logo-band ul .twitter span {
+  width: 26px;
+  height: 21px;
+  background-position: 0 -2919px;
+}
+
+.logo-band ul .evernote span {
+  width: 129px;
+  height: 31px;
+  background-position: 0 -773px;
+}
+
+.logo-band ul .adidas span {
+  width: 86px;
+  height: 26px;
+  background-position: 0 0px;
+}
+
+.logo-band ul .huge span {
+  width: 55px;
+  height: 24px;
+  background-position: 0 -1173px;
+}
+
+.feature-section {
+  padding-top: 60px;
+}
+
+.feature-section .image, .feature-section .content {
+  width: 53%;
+  overflow: hidden;
+}
+
+.feature-section .content {
+  width: 35%;
+  padding: 0 5%;
+}
+
+.feature-section .header {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 100;
+  font-size: 2.3em;
+  line-height: 40px;
+  letter-spacing: normal;
+  color: #333c4e;
+  padding-top: 80px;
+}
+
+.feature-section .description {
+  margin-top: 20px;
+}
+
+.feature-section .testimonial {
+  margin-top: 50px;
+}
+
+.feature-section .testimonial .logo {
+  max-height: 19px;
+}
+
+.feature-section .testimonial .quote, .feature-section .testimonial .signature {
+  margin-top: 15px;
+}
+
+.feature-section .signature img {
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+}
+
+.feature-section .signature img, .feature-section .signature span {
+ vertical-align: middle;
+}
+
+.feature-section .quote, .feature-section .signature span {
+  font-size: 0.9em;
+  font-style: italic;
+}
+
+
+
+
+
+
